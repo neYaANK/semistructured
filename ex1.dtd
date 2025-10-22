@@ -1,0 +1,46 @@
+<!-- ex1.dtd -->
+<!ELEMENT olympics (sports, description?)>
+<!ATTLIST olympics
+    year CDATA #REQUIRED
+    city CDATA #REQUIRED
+>
+
+<!ELEMENT sports (sport+)>
+
+<!ELEMENT sport (name?, teams?, athletes?)>
+<!ATTLIST sport
+    id ID #REQUIRED
+    type CDATA #REQUIRED
+>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT teams (team+)>
+<!ELEMENT team (coach, players)>
+<!ATTLIST team
+    country CDATA #REQUIRED
+>
+
+<!ELEMENT coach (#PCDATA)>
+
+<!ELEMENT players (player+)>
+<!ELEMENT player (#PCDATA)>
+<!ATTLIST player
+    id ID #REQUIRED
+    ref IDREF #IMPLIED
+>
+
+<!ELEMENT athletes (athlete+)>
+<!ELEMENT athlete (name, medals)>
+<!ATTLIST athlete
+    country CDATA #REQUIRED
+>
+
+<!ELEMENT medals (gold, silver, bronze)>
+<!ELEMENT gold (#PCDATA)>
+<!ELEMENT silver (#PCDATA)>
+<!ELEMENT bronze (#PCDATA)>
+
+<!ELEMENT description (#PCDATA | h1 | date)*>
+<!ELEMENT h1 (#PCDATA)>
+<!ELEMENT date (#PCDATA)>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE olympics SYSTEM "ex1.dtd">
+
+<olympics year="2025" city="Vienna">
+    <sports>
+        <sport id="S2" type="solo">
+            <name>100m Sprint</name>
+            <athletes>
+                <athlete country="jamaica">
+                    <name>Usain Bolt</name>
+                    <medals>
+                        <gold>3</gold>
+                        <silver>0</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+            </athletes>
+        </sport>
+    </sports>
+</olympics>
