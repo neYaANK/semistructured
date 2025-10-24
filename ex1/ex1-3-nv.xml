@@ -3,21 +3,22 @@
 
 <olympics year="2025" city="Vienna">
     <sports>
-        <sport id="S3" type="team">
+        <sport sport_id="S3" type="team">
             <name>Baseball</name>
             <teams>
                 <team country="france">
                     <coach>John Doe</coach>
                     <players>
-                        <player id="P2">John Smith</player>
-                        <player id="P1" ref="P2">Teammate</player>
+                        <player player_id="P2">John Smith</player>
+                        <player player_id="P1" ref="P2">Teammate</player>
                     </players>
                 </team>
             </teams>
         </sport>
     </sports>
+    <!-- <h2> tag is not accepted in mixed element <description>-->
     <description>
-        The <h1>Olympics 2025</h1> took place at <date>August 1, 2025</date>.
+        The <h2>Olympics 2025</h2> took place at <date>August 1, 2025</date>.
         They have been around for &gt;100 years already!
     </description>
 </olympics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
+<!-- Element content-->
 <olympics year="2025" city="Vienna">
     <sports>
         <sport type="team">
@@ -32,6 +32,7 @@
                     </medals>
                 </athlete>
                 <athlete country="usa">
+                    <!-- Simple content-->
                     <name>Jack Runner</name>
                     <medals>
                         <gold>0</gold>
@@ -41,10 +42,10 @@
                 </athlete>
             </athletes>
         </sport>
-        <!-- Placeholder for the new sport -->
+        <!-- Placeholder for the new sport. Empty content. -->
         <sport/>
     </sports>
-    <!-- The descriptions of the olympics goes here -->
+    <!-- The descriptions of the olympics goes here. Mixed content -->
     <description>
         The <h1>Olympcis 2025</h1> took place at <date>August 1, 2025</date>
         They are being around for &gt;100 years already!

@@ -1,0 +1,21 @@
+<submission exercise-sheet="1">
+<!--  select the proper exercise sheet number: from 1 to 8   -->
+<discussion date="2025-10-23" slot="1">
+<!--  select the date of the session for the work in groups   -->
+<!--  select the discussion slot of the day: must be 1 or 2   -->
+<main-student student-id="12133448"/>
+<!--  add your student ID; you are the main student   -->
+<other-student student-id="12322027"/>
+<other-student student-id="12323820"/>
+<!--  add the student IDs of the colleagues with whom you had the discussion   -->
+</discussion>
+<individual-reflection> 
+    During this exercize I became familliar with core concepts of XML, DTDs and XML's validation.
+    After working in the group I discovered that naming practices differ in other students' files.
+    I also found out easier ways to do what I've done myself and overall that was quite helpful.
+    For sure my feedback was helpful for my understanding of concepts and improving solution. I also hope my teammates feel so too.
+    I did improve my solution by changing attribute names to be more descriptive. I did not change the structure because I find that this is subjective.
+    The topic of DTD actually changed my view on semistructured data as I thought only of JSON without any constraints.
+    I don't have any ideas, everything is quite helpful already.
+</individual-reflection>
+</submission>

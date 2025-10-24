@@ -3,13 +3,13 @@
 
 <olympics year="2025" city="Vienna">
     <sports>
-        <sport id="S1" type="team">
+        <sport sport_id="S1" type="team">
             <name>Baseball</name>
             <teams>
                 <team country="austria">
                     <coach>Felix Bauer</coach>
                     <players>
-                        <player id="P1">Stefan Berger</player>
+                        <player player_id="P1">Stefan Berger</player>
                     </players>
                 </team>
             </teams>

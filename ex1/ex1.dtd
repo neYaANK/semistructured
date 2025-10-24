@@ -9,7 +9,7 @@
 
 <!ELEMENT sport (name?, teams?, athletes?)>
 <!ATTLIST sport
-    id ID #REQUIRED
+    sport_id ID #REQUIRED
     type CDATA #REQUIRED
 >
 
@@ -26,7 +26,7 @@
 <!ELEMENT players (player+)>
 <!ELEMENT player (#PCDATA)>
 <!ATTLIST player
-    id ID #REQUIRED
+    player_id ID #REQUIRED
     ref IDREF #IMPLIED
 >
 

@@ -3,11 +3,16 @@
 
 <olympics year="2025" city="Vienna">
     <sports>
-        <sport id="S2" type="solo">
+        <sport sport_id="S2" type="solo">
             <name>100m Sprint</name>
             <athletes>
                 <athlete country="jamaica">
-                    <name>Usain Bolt</name>
+                    <!-- Name element accepts no child elements -->
+                    <!-- First and last elements are not defined -->
+                    <name>
+                        <first>Usain</first>
+                        <last>Bolt</last>
+                    </name>
                     <medals>
                         <gold>3</gold>
                         <silver>0</silver>
