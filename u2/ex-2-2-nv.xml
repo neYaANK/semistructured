@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<olympics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="ex2.xsd"
+          year="2025" city="Vienna">
+    <sports>
+        <sport id="s2" type="solo">
+            <name>100m Sprint</name>
+            <athletes>
+                <athlete country="Jamaica">
+                    <name>Usain Bolt</name>
+                    <medals>
+                        <!-- Medals count can not be negative -->
+                        <gold>-1</gold>
+                        <silver>0</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+            </athletes>
+        </sport>
+    </sports>
+    <description>Olympics!</description>
+</olympics>

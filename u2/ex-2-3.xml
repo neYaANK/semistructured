@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<olympics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="ex2.xsd"
+          year="2025" city="Vienna">
+    <sports>
+        <sport id="s3" type="team">
+            <name>Football</name>
+            <teams>
+                <team country="France">
+                    <coach>John Doe</coach>
+                    <players>
+                        <player id="p2">John Smith</player>
+                        <player id="p3" ref="p2">Peter Smith</player>
+                    </players>
+                </team>
+            </teams>
+        </sport>
+    </sports>
+    <description>
+        The <h1>Olympics 2025</h1> took place at <date>August 1, 2025</date>.
+    </description>
+</olympics>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Year attribute is missing -->
+<olympics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="ex2.xsd" 
+        city="Vienna">
+    
+    <sports>
+        <sport id="s1" type="team">
+            <name>Baseball</name>
+            <teams>
+                <team country="Austria">
+                    <coach>Felix Bauer</coach>
+                    <players>
+                        <player id="p1">Stefan Berger</player>
+                    </players>
+                </team>
+            </teams>
+        </sport>
+    </sports>
+    <description>Olympics!</description>
+</olympics>
