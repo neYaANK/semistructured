@@ -1,0 +1,20 @@
+1. Retrieve the names of athletes who won at least one gold medal
+//athlete[medals/gold > 0]/name/text() => Usain Bolt
+Select all athlete names where the number of gold medals is more than 0
+
+2. Get the countries of all teams
+//team/@country => austria, france
+Select all values of the country attribute from every team
+
+3. Get all athletes with their total number of medals
+//athlete/concat(name/text(), ' - ', sum(medals/*)) => "Usain Bolt - 3", "Jack Runner - 1"
+Use concat and sum to return each athlete’s name and total medal count
+
+4. Get all sports that are empty 
+//sport[not(*)] => <sport/>
+Select all sport elements that don't have children
+
+5. Get all names of people (players and athletes)
+//player/text() | //athlete/name/text() => Stefan Berger, John Smith, Usain Bolt, Jack Runner
+Use | to combine results
+

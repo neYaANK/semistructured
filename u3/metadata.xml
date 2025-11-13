@@ -1,0 +1,20 @@
+<submission exercise-sheet="1">
+<!--  select the proper exercise sheet number: from 1 to 8   -->
+<discussion date="2025-11-13" slot="1">
+<!--  select the date of the session for the work in groups   -->
+<!--  select the discussion slot of the day: must be 1 or 2   -->
+<main-student student-id="12133448"/>
+<!--  add your student ID; you are the main student   -->
+<other-student student-id=""/>
+<other-student student-id=""/>
+<!--  add the student IDs of the colleagues with whom you had the discussion   -->
+</discussion>
+<individual-reflection> 
+    During this exercize I became familliar with semantics of XPath.
+    After working in the group I discovered that ...
+    For sure my feedback was helpful for my understanding of concepts and improving solution. I also hope my teammates feel so too.
+    I did improve my solution by ...
+    The topic of XPath actually was quite useful as I have already encountered XPath when was learning more about web development.
+    I don't have any ideas, everything is quite helpful already.
+</individual-reflection>
+</submission>

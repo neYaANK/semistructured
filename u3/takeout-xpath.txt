@@ -1,0 +1,33 @@
+1. Retrieve the identifiers (the values of the id attribute) of all staff members working at
+the restaurant
+//person/@id => p1, p2, p3
+Select all person ids among descendants
+
+2. Retrieve the names (the values of the name attribute) of all vegetarian dishes.
+//dish[@vegetarian='true']/@name => Margherita Pizza, Vegi Burger, Fried Rice
+Select all dishes' names' among descendants
+
+3. Count the number of item elements in the 2nd order of the restaurant (i.e., in the second
+order element that appears as content of the current-orders element).
+count(//order[2]/item) => 3
+Count all items in second order descendant
+
+4. Retrieve client names (the values of the client-name attribute) of customers who
+have more than 2 items in their order.
+//order[count(item) > 2]/self-pickup/@client-name => Steve
+Select all orders that have more than 2 items and get their client names
+
+5. Retrieve the names of staff members who are currently assigned to deliver some order.
+//person[@id = //address/@deliveredBy]/name/text() => Mark Doe, John Doe
+Select all personnel names, which id corresponds to order being delivered by personnel
+
+6. Retrieve the identifiers of orders whose total price is more than 20. Specifically, the total
+price of an order is the sum of item prices over all items in the order.
+//order[sum(item/@price) > 20]/@order-id => o2
+Select all order ids with sum of their items' price more than 20
+
+7. Get all totals of orders that are being delivered:
+//address[@deliveredBy]/../total/text() => 17, 9
+
+8. Get all orders delivered by personnel with transport:
+//address[@deliveredBy=//person[transport]/@id]/../@order-id => o1, o3

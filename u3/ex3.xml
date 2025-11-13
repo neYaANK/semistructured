@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<olympics year="2025" city="Vienna">
+    <sports>
+        <sport type="team">
+            <name>Baseball</name>
+            <teams>
+                <team country="austria">
+                    <coach>Felix Bauer</coach>
+                    <players>
+                        <player>Stefan Berger</player>
+                    </players>
+                </team>
+                <team country="france">
+                    <coach>John Doe</coach>
+                    <players>
+                        <player>John Smith</player>
+                    </players>
+                </team>
+            </teams>
+        </sport>
+
+        <sport type="solo">
+            <name>100m Sprint</name>
+            <athletes>
+                <athlete country="jamaica">
+                    <name>Usain Bolt</name>
+                    <medals>
+                        <gold>3</gold>
+                        <silver>0</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+                <athlete country="usa">
+                    <name>Jack Runner</name>
+                    <medals>
+                        <gold>0</gold>
+                        <silver>1</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+            </athletes>
+        </sport>
+        <sport/>
+    </sports>
+    <description>
+        The <h1>Olympcis 2025</h1> took place at <date>August 1, 2025</date>
+        They are being around for &gt;100 years already!
+    </description>
+</olympics>
