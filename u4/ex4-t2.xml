@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ex4-t2.xslt"?>
+
+<library city="Vienna" established="2000">
+    <section name="fiction" id="sec1">
+        <book id="1" genre="fantasy">
+            <title>The Devils</title>
+            <author id="a1">
+                <firstname>Joe</firstname>
+                <lastname>Abercrombie</lastname>
+            </author>
+            <pages count="560"/>
+            <copies available="3" total="4"/>
+        </book>
+        
+        <book id="2" genre="fantasy">
+            <title>Battle Grounds</title>
+            <author id="a2">
+                <firstname>Jim</firstname>
+                <lastname>Butcher</lastname>
+            </author>
+            <pages count="432"/>
+            <copies available="3" total="8"/>
+        </book>
+        <book id="3" genre="fantasy">
+            <title>Nameless Slave</title>
+            <author id="a3">
+                <firstname>Vitaly</firstname>
+                <lastname>Zykov</lastname>
+            </author>
+            <pages count="504"/>
+            <copies available="0" total="1"/>
+        </book>
+    </section>
+</library>
