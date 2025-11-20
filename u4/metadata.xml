@@ -1,18 +1,18 @@
-<submission exercise-sheet="3">
+<submission exercise-sheet="4">
 <!--  select the proper exercise sheet number: from 1 to 8   -->
 <discussion date="2025-11-20" slot="1">
 <!--  select the date of the session for the work in groups   -->
 <!--  select the discussion slot of the day: must be 1 or 2   -->
 <main-student student-id="12133448"/>
 <!--  add your student ID; you are the main student   -->
-<other-student student-id=""/>
-<other-student student-id=""/>
+<other-student student-id="12218306"/>
+<other-student student-id="12424912"/>
 <!--  add the student IDs of the colleagues with whom you had the discussion   -->
 </discussion>
 <individual-reflection> 
-    During this exercize I became familliar with XSLT and it's concepts.
-    After working in the group I ... 
-    Feedback was helpful but overall my solution was fine. I hope my feedback helps my teammates.
+    During this exercize I became familliar with XSLT and SVG structure and how to use both.
+    After working in the group I found different unique features of XSLT that I can use in future such as converting xml tags direct to html ones.
+    Overall my solution was fine. I hope my feedback helps my teammates.
     I didn't improve my solution because everything was alright.
     XSLT topic is quite interesting, but I didn't encounter it anywhere else.
     I don't have any ideas, everything is quite helpful already.
