@@ -14,7 +14,7 @@
     After working in the group I found ...
     Overall my solution was fine. I hope my feedback helps my teammates.
     I didn't improve my solution because everything was alright.
-    SAX topic is quite interesting, but I didn't encounter it anywhere else, although it would be interesting to try implementing SAX, that populates DB with XML data.
-    I don't have any ideas, everything is quite helpful already.
+    SAX topic is quite interesting, but I didn't encounter it anywhere else.
+    I guess it would be interesting to try implementing SAX, that populates DB with XML data or creates a SQL query for an already predefined DB Scheme.
 </individual-reflection>
 </submission>
