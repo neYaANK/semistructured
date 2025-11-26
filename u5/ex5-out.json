@@ -1,0 +1,14 @@
+{
+	"sports": 3,
+	"teams": 2,
+	"athletes": 2,
+	"medals": {
+		"gold": 3,
+		"silver": 1,
+		"bronze": 0
+	},
+	"topAthlete": {
+		"name": "Usain Bolt",
+		"gold": 3
+	}
+}

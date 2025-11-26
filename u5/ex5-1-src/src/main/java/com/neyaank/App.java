@@ -8,6 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        try {
+            XmlToHtmlConverter.createHtmlAt("..\\takeout.xml", "..\\takeout.html");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

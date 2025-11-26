@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE takeout SYSTEM "takeout.dtd">
+
+<takeout>
+    <offered-dishes>
+        <dish id="d1" name="Margherita Pizza" vegetarian="true">Pizza with cheese</dish>
+        <dish id="d2" name="Vegi Burger" vegetarian="true">Burger with vegi ingridients</dish>
+        <dish id="d3" name="Fried Rice" vegetarian="true">Fried rice with eggs and green onion</dish>
+        <dish id="d4" name="Cheeseburger" vegetarian="false">Beef burger with BBQ sauce</dish>
+    </offered-dishes>
+
+    <personnel>
+        <person id="p1">
+            <name>Mark Doe</name>
+            <transport>bicycle</transport>
+        </person>
+        <person id="p2">
+            <name>John Doe</name>
+            <transport>car</transport>
+        </person>
+        <person id="p3">
+            <name>Stefan Doe</name>
+        </person>
+    </personnel>
+
+    <current-orders>
+        <order order-id="o1">
+            <address deliveredBy="p1">Freihaus</address>
+            <item dish="d1" price="8"/>
+            <item dish="d2" price="9"/>
+        </order>
+
+        <order order-id="o2">
+            <self-pickup client-name="Steve"/>
+            <item dish="d3" price="10"/>
+            <item dish="d4" price="12"/>
+            <item dish="d1" price="8"/>
+        </order>
+
+        <order order-id="o3">
+            <address deliveredBy="p2">Gusshaus</address>
+            <item dish="d2" price="9"/>
+        </order>
+    </current-orders>
+</takeout>
