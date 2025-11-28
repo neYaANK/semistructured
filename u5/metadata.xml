@@ -1,19 +1,19 @@
-<submission exercise-sheet="4">
+<submission exercise-sheet="5">
 <!--  select the proper exercise sheet number: from 1 to 8   -->
 <discussion date="2025-11-27" slot="2">
 <!--  select the date of the session for the work in groups   -->
 <!--  select the discussion slot of the day: must be 1 or 2   -->
 <main-student student-id="12133448"/>
 <!--  add your student ID; you are the main student   -->
-<other-student student-id=""/>
-<other-student student-id=""/>
+<other-student student-id="12223395"/>
+<other-student student-id="12323878"/>
 <!--  add the student IDs of the colleagues with whom you had the discussion   -->
 </discussion>
 <individual-reflection> 
     During this exercize I became familliar with SAX conversions and looked how XML to HTML and JSON conversions work under the hood.
-    After working in the group I found ...
-    Overall my solution was fine. I hope my feedback helps my teammates.
-    I didn't improve my solution because everything was alright.
+    After working in the group I found better ways to implement conversions in Java.
+    Overall my solution was fine, but for my teammates it was a bit simple. I hope my feedback helps my teammates.
+    I didn't improve my solution because altough the example was not too complex, it still showed the core part of the topic and some interesting features.
     SAX topic is quite interesting, but I didn't encounter it anywhere else.
     I guess it would be interesting to try implementing SAX, that populates DB with XML data or creates a SQL query for an already predefined DB Scheme.
 </individual-reflection>
