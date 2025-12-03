@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<olympics city="Vienna" year="2025">
+        
+    <sports>
+                
+        <sport id="s1" type="team">
+                        
+            <name>Baseball</name>
+                        
+            <teams>
+                                
+                <team country="austria">
+                                        
+                    <coach>
+                                                
+                        <firstname>Felix</firstname>
+                                                
+                        <lastname>Bauer</lastname>
+                                            
+                    </coach>
+                                        
+                    <players>
+                                                
+                        <player>
+                                                        
+                            <firstname>Stefan</firstname>
+                                                        
+                            <lastname>Berger</lastname>
+                                                    
+                        </player>
+                                            
+                    </players>
+                                    
+                </team>
+                                
+                <team country="france">
+                                        
+                    <coach>
+                                                
+                        <firstname>John</firstname>
+                                                
+                        <lastname>Doe</lastname>
+                                            
+                    </coach>
+                                        
+                    <players>
+                                                
+                        <player>
+                                                        
+                            <firstname>John</firstname>
+                                                        
+                            <lastname>Smith</lastname>
+                                                    
+                        </player>
+                                            
+                    </players>
+                                    
+                </team>
+                            
+            </teams>
+                    
+        </sport>
+                
+        <sport id="s2" type="solo">
+                        
+            <name>100m Sprint</name>
+                        
+            <athletes>
+                                
+                <athlete country="jamaica" rank="1">
+                                        
+                    <person>
+                                                
+                        <firstname>Usain</firstname>
+                                                
+                        <lastname>Bolt</lastname>
+                                            
+                    </person>
+                                        
+                    <medals>
+                                                
+                        <gold>3</gold>
+                                                
+                        <silver>0</silver>
+                                                
+                        <bronze>0</bronze>
+                                            
+                    </medals>
+                                    
+                </athlete>
+                                
+                <athlete country="usa" rank="2">
+                                        
+                    <person>
+                                                
+                        <firstname>Jack</firstname>
+                                                
+                        <lastname>Runner</lastname>
+                                            
+                    </person>
+                                        
+                    <medals>
+                                                
+                        <gold>0</gold>
+                                                
+                        <silver>1</silver>
+                                                
+                        <bronze>0</bronze>
+                                            
+                    </medals>
+                                    
+                </athlete>
+                            
+            </athletes>
+                    
+        </sport>
+                
+        <sport id="s3"/>
+            
+    </sports>
+        
+    <description>
+                The 
+        <h1>Olympcis 2025</h1>
+         took place at 
+        <date>August 1, 2025</date>
+                They are being around for &gt;100 years already!
+    
+    </description>
+    
+    <olympics-stats>
+        <participants total-people="4" total-teams="2"/>
+        <medals bronze="0" gold="3" silver="1" total-medals="4"/>
+    </olympics-stats>
+</olympics>

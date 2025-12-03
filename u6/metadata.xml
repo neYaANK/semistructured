@@ -1,0 +1,20 @@
+<submission exercise-sheet="6">
+<!--  select the proper exercise sheet number: from 1 to 8   -->
+<discussion date="2025-12-04" slot="1">
+<!--  select the date of the session for the work in groups   -->
+<!--  select the discussion slot of the day: must be 1 or 2   -->
+<main-student student-id="12133448"/>
+<!--  add your student ID; you are the main student   -->
+<other-student student-id=""/>
+<other-student student-id=""/>
+<!--  add the student IDs of the colleagues with whom you had the discussion   -->
+</discussion>
+<individual-reflection> 
+    During this exercize I became familliar with DOM conversions and actually compared SAX and DOM way.
+    After working in the group I found ...
+    Overall my solution was fine. I hope my feedback helps my teammates.
+    I didn't improve my solution because ...
+    DOM topic is more interesting, as it is considered a standart and also is used not only in XML.
+    I don't have any suggestions, everything was fine.
+</individual-reflection>
+</submission>
