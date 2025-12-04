@@ -3,6 +3,7 @@ package com.neyaank;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -12,55 +13,60 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.IOException;
 
 public class DomParser {
     private DocumentBuilderFactory factory;
+    private Document doc;
+    private DocumentBuilder builder;
+    private int totalGold = 0;
+    private int totalSilver = 0;
+    private int totalBronze = 0;
+    private int totalParticipants = 0;
+    private int totalTeams = 0;
 
-    public DomParser(){
+    public DomParser() {
         factory = DocumentBuilderFactory.newInstance();
     }
 
-    public void createDom(File in, File out) {
+    public void open(File in) {
         try {
-            factory.setIgnoringElementContentWhitespace(true);
-
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            Document doc = builder.parse(in);
-
+            builder = factory.newDocumentBuilder();
+            doc = builder.parse(in);
             doc.getDocumentElement().normalize();
+        } catch (Exception e) {
+        }
+    }
 
-            int totalGold = 0;
-            int totalSilver = 0;
-            int totalBronze = 0;
-            int totalParticipants = 0;
-            int totalTeams = 0;
+    public void collectStats() {
+        NodeList sportsList = doc.getElementsByTagName("sport");
 
-            NodeList sportsList = doc.getElementsByTagName("sport");
+        for (int i = 0; i < sportsList.getLength(); i++) {
+            Element sport = (Element) sportsList.item(i);
+            String type = sport.getAttribute("type");
+            if ("team".equals(type)) {
 
-            for (int i = 0; i < sportsList.getLength(); i++) {
-                Element sport = (Element) sportsList.item(i);
-                String type = sport.getAttribute("type");
-                if ("team".equals(type)) {
+                NodeList teams = sport.getElementsByTagName("team");
+                totalTeams += teams.getLength();
+                NodeList players = sport.getElementsByTagName("player");
+                totalParticipants += players.getLength();
+            } else if ("solo".equals(type)) {
 
-                    NodeList teams = sport.getElementsByTagName("team");
-                    totalTeams += teams.getLength();
-                    NodeList players = sport.getElementsByTagName("player");
-                    totalParticipants += players.getLength();
-                } else if ("solo".equals(type)) {
+                NodeList athletes = sport.getElementsByTagName("athlete");
+                totalParticipants += athletes.getLength();
+                for (int j = 0; j < athletes.getLength(); j++) {
 
-                    NodeList athletes = sport.getElementsByTagName("athlete");
-                    totalParticipants += athletes.getLength();
-                    for (int j = 0; j < athletes.getLength(); j++) {
-
-                        Element athlete = (Element) athletes.item(j);
-                        totalGold += getInt(athlete, "gold");
-                        totalSilver += getInt(athlete, "silver");
-                        totalBronze += getInt(athlete, "bronze");
-                    }
+                    Element athlete = (Element) athletes.item(j);
+                    totalGold += getInt(athlete, "gold");
+                    totalSilver += getInt(athlete, "silver");
+                    totalBronze += getInt(athlete, "bronze");
                 }
             }
+        }
+    }
 
-
+    public void createOutput(File out) {
+        try {
             Element statsRoot = doc.createElement("olympics-stats");
             Element participation = doc.createElement("participants");
             participation.setAttribute("total-people", String.valueOf(totalParticipants));

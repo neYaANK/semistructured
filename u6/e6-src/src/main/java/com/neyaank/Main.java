@@ -7,7 +7,8 @@ public class Main {
         DomParser dom = new DomParser();
         File in = new File("..\\ex6.xml");
         File out = new File("..\\ex6-out.xml");
-        dom.createDom(in,out);
-
+        dom.open(in);
+        dom.collectStats();
+        dom.createOutput(out);
     }
 }
