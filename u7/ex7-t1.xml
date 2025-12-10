@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<olympics year="2025" city="Vienna">
+    <sports>
+        <sport id="s1" type="team">
+            <name>Baseball</name>
+            <teams>
+
+                <team country="austria">
+                    <coach>
+                        <firstname>Felix</firstname>
+                        <lastname>Bauer</lastname>
+                    </coach>
+                    <players>
+                        <player>
+                            <firstname>Stefan</firstname>
+                            <lastname>Berger</lastname>
+                        </player>
+                    </players>
+                </team>
+
+                <team country="france">
+                    <coach>
+                        <firstname>John</firstname>
+                        <lastname>Doe</lastname>
+                    </coach>
+                    <players>
+                        <player>
+                            <firstname>John</firstname>
+                            <lastname>Smith</lastname>
+                        </player>
+                    </players>
+                </team>
+
+            </teams>
+        </sport>
+
+        <sport id="s2" type="solo">
+            <name>100m Sprint</name>
+            <athletes>
+
+                <athlete rank="1" country="jamaica">
+                    <person>
+                        <firstname>Usain</firstname>
+                        <lastname>Bolt</lastname>
+                    </person>
+                    <medals>
+                        <gold>3</gold>
+                        <silver>0</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+
+                <athlete rank="2" country="usa">
+                    <person>
+                        <firstname>Jack</firstname>
+                        <lastname>Runner</lastname>
+                    </person>
+                    <medals>
+                        <gold>0</gold>
+                        <silver>3</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+                <athlete rank="3" country="austria">
+                    <person>
+                        <firstname>Carl</firstname>
+                        <lastname>Stein</lastname>
+                    </person>
+                    <medals>
+                        <gold>0</gold>
+                        <silver>0</silver>
+                        <bronze>3</bronze>
+                    </medals>
+                </athlete>
+                <athlete rank="4" country="unitedKingdom">
+                    <person>
+                        <firstname>John</firstname>
+                        <lastname>Galt</lastname>
+                    </person>
+                    <medals>
+                        <gold>0</gold>
+                        <silver>0</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+            </athletes>
+        </sport>
+        <sport id="s3" type="solo">
+            <name>500m Sprint</name>
+            <athletes>
+
+                <athlete rank="1" country="jamaica">
+                    <person>
+                        <firstname>Usain</firstname>
+                        <lastname>Bolt</lastname>
+                    </person>
+                    <medals>
+                        <gold>2</gold>
+                        <silver>1</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+
+                <athlete rank="2" country="usa">
+                    <person>
+                        <firstname>Jack</firstname>
+                        <lastname>Runner</lastname>
+                    </person>
+                    <medals>
+                        <gold>1</gold>
+                        <silver>2</silver>
+                        <bronze>0</bronze>
+                    </medals>
+                </athlete>
+                <athlete rank="3" country="austria">
+                    <person>
+                        <firstname>Carl</firstname>
+                        <lastname>Stein</lastname>
+                    </person>
+                    <medals>
+                        <gold>0</gold>
+                        <silver>0</silver>
+                        <bronze>2</bronze>
+                    </medals>
+                </athlete>
+                <athlete rank="4" country="unitedKingdom">
+                    <person>
+                        <firstname>John</firstname>
+                        <lastname>Galt</lastname>
+                    </person>
+                    <medals>
+                        <gold>0</gold>
+                        <silver>0</silver>
+                        <bronze>1</bronze>
+                    </medals>
+                </athlete>
+            </athletes>
+        </sport>
+        <sport id="s4"/>
+    </sports>
+
+    <description>
+        The <h1>Olympcis 2025</h1> took place at <date>August 1, 2025</date>
+        They are being around for &gt;100 years already!
+    </description>
+
+</olympics>

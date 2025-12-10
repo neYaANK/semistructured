@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info year="2025" host="Vienna">
+    <places>
+        <place id="v1" type="outdoor">
+            <name>Stadium 1</name>
+            <capacity>50000</capacity>
+            <events>
+                <event sport-ref="s2">
+                    <date>2025-08-01</date>
+                    <time>18:00</time>
+                    <broadcasters>
+                        <channel>ORF</channel>
+                        <channel>Eurosport</channel>
+                    </broadcasters>
+                    <tickets>
+                        <sold>45000</sold>
+                        <price currency="EUR">120</price>
+                    </tickets>
+                </event>
+                 <event sport-ref="s3">
+                    <date>2025-08-01</date>
+                    <time>20:00</time>
+                    <broadcasters>
+                        <channel>ORF</channel>
+                    </broadcasters>
+                    <tickets>
+                        <sold>48000</sold>
+                        <price currency="EUR">150</price>
+                    </tickets>
+                </event>
+            </events>
+        </place>
+        <place id="v2" type="field">
+            <name>Field 1</name>
+            <capacity>10000</capacity>
+            <events>
+                <event sport-ref="s1">
+                    <date>2025-08-02</date>
+                    <time>14:00</time>
+                    <broadcasters>
+                        <channel>ESPN</channel>
+                    </broadcasters>
+                    <tickets>
+                        <sold>8000</sold>
+                        <price currency="EUR">50</price>
+                    </tickets>
+                </event>
+            </events>
+        </place>
+    </places>
+</info>

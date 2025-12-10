@@ -1,0 +1,32 @@
+<country>
+    <austria category="team" coach="Felix Bauer">
+        <member>Stefan Berger</member>
+    </austria>
+    <france category="team" coach="John Doe">
+        <member>John Smith</member>
+    </france>
+    <jamaica category="solo" rank="rank 1">
+        <member>Usain Bolt</member>
+    </jamaica>
+    <usa category="solo" rank="rank 2">
+        <member>Jack Runner</member>
+    </usa>
+    <austria category="solo" rank="rank 3">
+        <member>Carl Stein</member>
+    </austria>
+    <unitedKingdom category="solo" rank="rank 4">
+        <member>John Galt</member>
+    </unitedKingdom>
+    <jamaica category="solo" rank="rank 1">
+        <member>Usain Bolt</member>
+    </jamaica>
+    <usa category="solo" rank="rank 2">
+        <member>Jack Runner</member>
+    </usa>
+    <austria category="solo" rank="rank 3">
+        <member>Carl Stein</member>
+    </austria>
+    <unitedKingdom category="solo" rank="rank 4">
+        <member>John Galt</member>
+    </unitedKingdom>
+</country>

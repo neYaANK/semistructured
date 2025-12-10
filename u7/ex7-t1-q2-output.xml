@@ -1,0 +1,24 @@
+<medal-stats>
+    <sport name="100m Sprint">
+        <gold-stats sport-total="3">
+            <best-athlete count="3">Usain Bolt</best-athlete>
+        </gold-stats>
+        <silver-stats sport-total="3">
+            <best-athlete count="3">Jack Runner</best-athlete>
+        </silver-stats>
+        <bronze-stats sport-total="3">
+            <best-athlete count="3">Carl Stein</best-athlete>
+        </bronze-stats>
+    </sport>
+    <sport name="500m Sprint">
+        <gold-stats sport-total="3">
+            <best-athlete count="2">Usain Bolt</best-athlete>
+        </gold-stats>
+        <silver-stats sport-total="3">
+            <best-athlete count="2">Jack Runner</best-athlete>
+        </silver-stats>
+        <bronze-stats sport-total="3">
+            <best-athlete count="2">Carl Stein</best-athlete>
+        </bronze-stats>
+    </sport>
+</medal-stats>
