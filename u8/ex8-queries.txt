@@ -1,0 +1,60 @@
+1. Find all athletes, that have won at least 1 medal
+
+MATCH (a:Athlete)
+WHERE a.gold > 0 OR a.silver > 0 OR a.bronze > 0
+RETURN a.lastname + " (" + a.country + "): G:" + a.gold + " S:" + a.silver + " B:" + a.bronze
+ORDER BY a.gold DESC
+
+"Bolt (Jamaica): G:3 S:1 B:0"
+"Runner (USA): G:0 S:1 B:0"
+"Stein (Austria): G:0 S:0 B:2"
+"Galt (UK): G:0 S:0 B:1"
+
+2. Find all participants and their roles
+
+MATCH (a:Athlete)
+RETURN a.firstname + " " + a.lastname + " [" + a.country + "] (Athlete)" AS Result
+UNION
+MATCH (p:Player)-[:PLAYS_IN]->(t:Team)
+RETURN p.firstname + " " + p.lastname + " [" + t.country + "] (Player)" AS Result
+UNION
+MATCH (c:Coach)-[:COACHES]->(t:Team)
+RETURN c.firstname + " " + c.lastname + " [" + t.country + "] (Coach)" AS Result    
+
+"Usain Bolt [Jamaica] (Athlete)"
+"Jack Runner [USA] (Athlete)"
+"Carl Stein [Austria] (Athlete)"
+"John Galt [UK] (Athlete)"
+"Stefan Berger [Austria] (Player)"
+"Felix Bauer [Austria] (Coach)"
+
+3. Find all countries that are taking part in Olympics
+
+MATCH (n)
+WHERE n:Athlete OR n:Team
+WITH DISTINCT n.country AS Country
+RETURN Country
+ORDER BY Country
+
+"Austria"
+"Jamaica"
+"UK"
+"USA"
+
+4. Find all medal awards for each solo sport
+
+MATCH (a:Athlete)-[:COMPETES_IN]->(s:Sport)
+WITH s.name AS name, sum(a.gold + a.silver + a.bronze) AS medals
+RETURN name + ": " + medals + " medals"
+
+"100m Sprint: 8 medals"
+
+5. Find all participants whose surname starts with B
+
+MATCH (n)
+WHERE (n:Athlete OR n:Player OR n:Coach) AND n.lastname STARTS WITH "B"
+RETURN n.firstname + " " + n.lastname
+
+"Felix Bauer"
+"Stefan Berger"
+"Usain Bolt"

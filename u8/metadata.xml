@@ -5,16 +5,16 @@
 <!--  select the discussion slot of the day: must be 1 or 2   -->
 <main-student student-id="12133448"/>
 <!--  add your student ID; you are the main student   -->
-<other-student student-id="12418020"/>
-<other-student student-id="12426976"/>
+<other-student student-id=""/>
+<other-student student-id=""/>
 <!--  add the student IDs of the colleagues with whom you had the discussion   -->
 </discussion>
 <individual-reflection> 
-    During this exercize I became familliar with XQuery expressions and found the better way to operate and form XML data.
-    After working in the group I didn't find anything really new, only other approaches to XQuery scrips.
+    During this exercize I became familliar with 
+    After working in the group I didn't find anything really new.
     Overall my solution was fine. I hope my feedback helps my teammates, but their solution was alright too.
     I didn't improve my solution because it was fine.
-    XQuery topic is quite interesting as it finally offers a way to manipulate XML data that is more readable and potent than XPath.
+    
     I don't have any suggestions, everything was fine.
 </individual-reflection>
 </submission>
