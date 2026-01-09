@@ -1,20 +1,20 @@
-<submission exercise-sheet="7">
+<submission exercise-sheet="8">
 <!--  select the proper exercise sheet number: from 1 to 8   -->
-<discussion date="2025-12-12" slot="1">
+<discussion date="2025-01-09" slot="2">
 <!--  select the date of the session for the work in groups   -->
 <!--  select the discussion slot of the day: must be 1 or 2   -->
 <main-student student-id="12133448"/>
 <!--  add your student ID; you are the main student   -->
-<other-student student-id=""/>
+<other-student student-id="12334960"/>
 <other-student student-id=""/>
 <!--  add the student IDs of the colleagues with whom you had the discussion   -->
 </discussion>
 <individual-reflection> 
-    During this exercize I became familliar with 
+    During this exercize I became familliar with property graphs and compared data structured in graphs and in XML.
     After working in the group I didn't find anything really new.
-    Overall my solution was fine. I hope my feedback helps my teammates, but their solution was alright too.
-    I didn't improve my solution because it was fine.
-    
+    Overall my solution was fine, except of the graph structure as it could be better.
+    I hope my feedback helps my teammates, but their solution was alright too.
+    I didn't improve my solution because it was overall alright.
     I don't have any suggestions, everything was fine.
 </individual-reflection>
 </submission>
